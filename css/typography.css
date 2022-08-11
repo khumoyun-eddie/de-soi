@@ -1,0 +1,57 @@
+.heading-text {
+  font-weight: 700;
+  line-height: 1;
+  font-family: var(--font-heading);
+}
+.heading-1 {
+  font-size: 8rem;
+}
+.heading-1--white {
+  color: var(--color-white);
+}
+.heading-2 {
+  font-size: 7.5rem;
+}
+.heading-3 {
+  font-size: 7rem;
+}
+.heading-4 {
+  font-size: 6rem;
+}
+.heading-5 {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+.heading-6 {
+  font-size: 2.7rem;
+}
+.bold-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bold-text--white {
+  color: var(--color-white);
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 375px) {
+  .heading-1{
+    font-size: 5rem;
+  }
+  .heading-2{
+    font-size: 5rem;
+  }
+  .heading-3{
+    font-size: 4.375rem;
+  }
+  .heading-4{
+    font-size: 3.75rem;
+  }
+  .heading-5{
+    font-size: 3rem;
+  }
+  .heading-6{
+    font-size: 2.5rem;
+  }
+}

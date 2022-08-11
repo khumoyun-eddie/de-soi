@@ -1,0 +1,55 @@
+.products__carousel {
+  width: 90%;
+  margin: 0 auto;
+}
+.products__carousel-cell {
+  width: 23%;
+  margin-right: 6.8rem;
+}
+.products__carousel-cell > img {
+  width: 26.8rem;
+  height: 34rem;
+}
+.products__text{
+    margin: 2rem 0;
+}
+@media only screen and (max-width: 375px) {
+    .products__carousel{
+        width: 100%;
+    }
+  .products__carousel-cell {
+    padding: 2.5rem 1.6rem;
+    width: 45%;
+    margin-right: 4rem;
+  }
+  .products__carousel-cell > img {
+    width: 18.425rem;
+    height: 23.375rem;
+  }
+}
+/* About section carousel */
+.about__carousel {
+  /* width: 100%; */
+  margin: 0 auto;
+  padding: 8rem 0 4rem;
+}
+.about__carousel-cell {
+  width: 30%;
+  margin-right: 12rem;
+  text-align: center;
+  padding: 0 8rem;
+}
+.about__carousel .flickity-page-dots {
+  position: relative;
+  margin-top: 2.5rem;
+  bottom: 0;
+}
+.about__carousel .flickity-page-dots .dot {
+  background-color: var(--color-brown);
+}
+
+@media only screen and (max-width: 375px) {
+  .about__carousel-cell {
+    width: 100%;
+  }
+}

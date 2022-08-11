@@ -1,0 +1,33 @@
+.btn {
+  font-size: 1.4rem;
+  font-weight: 700;
+  /* padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-black); */
+  text-transform: uppercase;
+  /* text-decoration: none; */
+  color: var(--color-black);
+  transition: all 0.2s ease-in-out;
+}
+.btn--white{
+  color: var(--color-white);
+}
+.btn:hover {
+  color: var(--color-brown);
+  border-color: var(--color-brown);
+}
+
+
+.control-btn {
+  display: none;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var(--color-white);
+}
+@media only screen and (max-width:600px) {
+  .control-btn{
+    display: block;
+  }
+  
+}

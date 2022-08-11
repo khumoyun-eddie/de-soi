@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import 'container.css';
+@import 'typography.css';
+@import 'buttons.css';
+@import 'carousels.css';
+@import 'header.css';
+@import 'navigation.css';
+@import './home/sections.css';
+@import './plp/sections.css';
+@import 'footer.css';
+:root {
+  --color-black: #000;
+  --color-brown: #bb6b1e;
+  --color-white: #fff;
+  --color-gray-1: #e5e5e5;
+  --color-gray-2: #fffbf6;
+  --color-gray-3:#7D7D7D;
+  --font-heading: 'Philosopher', sans-serif;
+  --font-body: 'Monserrat', sans-serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+
+@media only screen and (max-width:375px) {
+  html{
+    font-size: 50%;
+  }  
+}
