@@ -11,12 +11,12 @@ function productCarouselControl() {
   const productsListPrevBtn = document.querySelector('.prev-btn');
   const productsListNextBtn = document.querySelector('.next-btn');
 
-  productsListPrevBtn.addEventListener('click', () => {
-    productFlkty.previous();
-  });
-  productsListNextBtn.addEventListener('click', () => {
-    productFlkty.next();
-  });
+  // productsListPrevBtn.addEventListener('click', () => {
+  //   productFlkty.previous();
+  // });
+  // productsListNextBtn.addEventListener('click', () => {
+  //   productFlkty.next();
+  // });
 }
 // About Carousel
 function aboutCarouselControl() {
@@ -30,21 +30,9 @@ function aboutCarouselControl() {
   new Flickity(aboutCarousel, options);
 
   window.addEventListener('resize', function () {
-    if (screen.width >= 900) options.groupCells = 3;
-    if (screen.width >= 600) options.groupCells = 2;
-    if (screen.width < 600) options.groupCells = 1;
-
+    screen.width > 375 ? (options.groupCells = 3) : (options.groupCells = 1);
     new Flickity(aboutCarousel, options);
   });
-  // const productsListPrevBtn = document.querySelector('.prev-btn');
-  // const productsListNextBtn = document.querySelector('.next-btn');
-
-  // productsListPrevBtn.addEventListener('click', () => {
-  //   productFlkty.previous();
-  // });
-  // productsListNextBtn.addEventListener('click', () => {
-  //   productFlkty.next();
-  // });
 }
 
 (() => {

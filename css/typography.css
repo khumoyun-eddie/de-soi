@@ -18,6 +18,9 @@
 .heading-4 {
   font-size: 6rem;
 }
+.heading-4--small {
+  font-size: 5rem;
+}
 .heading-5 {
   font-size: 3.2rem;
   font-weight: 900;
