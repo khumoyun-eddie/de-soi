@@ -31,3 +31,14 @@
   }
   
 }
+.btn-cta{
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 1.6rem 15rem;
+  width: 100%;
+}

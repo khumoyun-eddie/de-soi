@@ -10,13 +10,13 @@
   width: 26.8rem;
   height: 34rem;
 }
-.products__text{
-    margin: 2rem 0;
+.products__text {
+  margin: 2rem 0;
 }
 @media only screen and (max-width: 375px) {
-    .products__carousel{
-        width: 100%;
-    }
+  .products__carousel {
+    width: 100%;
+  }
   .products__carousel-cell {
     padding: 2.5rem 1.6rem;
     width: 45%;
@@ -54,7 +54,6 @@
   }
 }
 
-
 .beverages__carousel {
   flex-grow: 1;
   height: 100%;
@@ -63,7 +62,75 @@
   width: 50%;
   overflow: hidden;
 }
-.beverages__carousel-cell:nth-of-type(2n+1) {
+.beverages__carousel-cell:nth-of-type(2n + 1) {
   border-left: 1px solid var(--color-border);
   border-right: 1px solid var(--color-border);
+}
+
+.recomendation__carousel {
+  width: 100%;
+  margin: 0 auto;
+  height: 67.4rem;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+}
+.recomendation__carousel-cell {
+  width: 23%;
+}
+.recomendation__carousel-cell:not(:first-child) {
+  border-left: 1px solid var(--color-border);
+}
+.recomendation__carousel-cell > img {
+  width: 37.5rem;
+  height: 44.1rem;
+}
+.recomendation__text {
+  margin: 2rem 0;
+}
+@media only screen and (max-width: 375px) {
+  .recomendation__carousel {
+    height: 45.75rem;
+  }
+  .recomendation__carousel-cell {
+    padding: 2.5rem 1.6rem;
+    width: 50% !important;
+  }
+  .recomendation__carousel-cell > img {
+    width: 12.875rem;
+    height: 22.5rem;
+  }
+}
+
+
+.benefits__carousel{
+  width: 100%;
+}
+.benefits__carousel-cell{
+  width: 30%;
+}
+.benefits__carousel .flickity-page-dots {
+  display: none;
+}
+@media only screen and (max-width: 375px) {
+  .benefits__carousel-cell {
+    width: 100%;
+  }
+  .benefits__carousel .flickity-page-dots {
+    display: block;
+  }
+}
+
+.recipe__carousel{
+  width: 100%;
+  /* background-color: var(--color-border); */
+}
+.recipe__carousel-cell{
+  width: 70%;
+  background-color: var(--color-white);
+}
+@media only screen and (max-width: 375px) {
+  .recipe__carousel-cell{
+    width: 100%;
+  }
 }
