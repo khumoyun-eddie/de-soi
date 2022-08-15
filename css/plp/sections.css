@@ -1,0 +1,40 @@
+.beverages {
+}
+
+.beverages__box {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--color-border);
+  /* border-bottom: 1px solid var(--color-border); */
+}
+.beverages__media {
+  width: 60%;
+  display: flex;
+}
+.beverages__media > div {
+  border-left: 1px solid var(--color-border);
+}
+@media only screen and (max-width: 375px) {
+  .beverages__box {
+    flex-wrap: wrap;
+  }
+  .beverages__box:first-of-type .card--text:first-of-type {
+    display: none;
+  }
+
+  .beverages__media {
+    width: 100%;
+  }
+  .beverages__media .card--pic {
+     width: 50%;
+   }
+  .beverages__box:first-of-type .beverages__media .card--pic:nth-child(2) {
+    display: none;
+  }
+  .beverages__box:first-of-type .beverages__media .card--pic:nth-child(1) {
+    width: 100%;
+  }
+  .beverages__carousel {
+    width: 100%;
+  }
+}

@@ -8,6 +8,7 @@
 @import 'navigation.css';
 @import './home/sections.css';
 @import './plp/sections.css';
+@import './plp/card.css';
 @import 'footer.css';
 :root {
   --color-black: #000;
@@ -15,7 +16,8 @@
   --color-white: #fff;
   --color-gray-1: #e5e5e5;
   --color-gray-2: #fffbf6;
-  --color-gray-3:#7D7D7D;
+  --color-gray-3: #7d7d7d;
+  --color-border: #cbcbcb;
   --font-heading: 'Philosopher', sans-serif;
   --font-body: 'Monserrat', sans-serif;
 }
@@ -29,16 +31,15 @@
 html {
   font-size: 62.5%;
 }
-body{
-    font-family: var(--font-body);
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6;
+body {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
-
-@media only screen and (max-width:375px) {
-  html{
+@media only screen and (max-width: 375px) {
+  html {
     font-size: 50%;
-  }  
+  }
 }

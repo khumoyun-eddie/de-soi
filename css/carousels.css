@@ -53,3 +53,17 @@
     width: 100%;
   }
 }
+
+
+.beverages__carousel {
+  flex-grow: 1;
+  height: 100%;
+}
+.beverages__carousel-cell {
+  width: 50%;
+  overflow: hidden;
+}
+.beverages__carousel-cell:nth-of-type(2n+1) {
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}

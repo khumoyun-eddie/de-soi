@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6.7rem 4.7rem;
+  gap: 8px;
+}
+.card--text {
+  width: 40%;
+}
+.card__header {
+}
+.card__description {
+  border-top: 1px solid var(--color-border);
+  padding: 1.6rem 0;
+}
+.card__sub-title {
+  text-align: center;
+  margin: 0.8rem 0 1.6rem 0;
+}
+.card--pic {
+  width: 50%;
+}
+.card--light {
+  background-color: var(--color-gray-2);
+}
+.card--banner {
+  width: 50%;
+  background-image: url(../../assets/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  justify-content: flex-start;
+}
+.card__img {
+  width: 38.7rem;
+  height: 38.7rem;
+}
+.card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card__reviews {
+  display: flex;
+  align-items: center;
+}
+.card__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.card__icon--filled::before {
+  content: url('../../assets/icons/filled star.svg');
+}
+.card__icon--regular::before {
+  content: url('../../assets/icons/star.svg');
+}
+.card .heading-6, .card__info{
+  display: none;
+}
+.card__info{
+  text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .card--text {
+    width: 100%;
+  }
+  .card .heading-6, .card__info{
+    display: block;
+  }
+  
+}

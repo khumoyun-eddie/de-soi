@@ -14,7 +14,7 @@
   background-color: var(--color-gray-2);
 }
 .about__banner {
-  background-image: url(../assets/martini.jpg);
+  background-image: url(../../assets/martini.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -121,6 +121,10 @@
 .ingredients__item {
   padding: 1.8rem 9rem;
 }
+.ingredients__item--small{
+  padding: .8rem 2.5rem;
+  text-align: center;
+}
 .ingredients__name {
   margin-top: 1.6rem;
   text-transform: uppercase;
@@ -143,7 +147,7 @@
 /* Refer section */
 .referal {
   height: 48rem;
-  background-image: url(../assets/Cocteles-a-domicilio\ 1.jpg);
+  background-image: url(../../assets/Cocteles-a-domicilio\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
