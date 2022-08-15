@@ -37,6 +37,7 @@
 }
 .navigation__mobile-menu {
   display: none;
+  position: relative;
 }
 
 .newsletter {
